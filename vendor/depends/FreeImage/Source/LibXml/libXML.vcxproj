@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug_static|Win32">
+      <Configuration>debug_static</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="debug_static|x64">
+      <Configuration>debug_static</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release_static|Win32">
+      <Configuration>release_static</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release_static|x64">
+      <Configuration>release_static</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{10B87C09-BD5C-4EE6-BFC7-165253F657F5}</ProjectGUID>
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>libXML</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <UseOfAtl>false</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <UseOfAtl>false</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_static|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <UseOfAtl>false</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_static|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <UseOfAtl>false</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <UseOfAtl>false</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <UseOfAtl>false</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_static|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <UseOfAtl>false</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_static|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <UseOfAtl>false</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\lib\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\lib\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='debug_static|Win32'">..\..\..\lib\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='debug_static|x64'">..\..\..\lib\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\lib\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\lib\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='release_static|Win32'">..\..\..\lib\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='release_static|x64'">..\..\..\lib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\..\..\build_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\..\..\build_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='debug_static|Win32'">..\..\..\..\..\build_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='debug_static|x64'">..\..\..\..\..\build_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\..\..\build_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\..\build_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='release_static|Win32'">..\..\..\..\..\build_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='release_static|x64'">..\..\..\..\..\build_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='debug_static|Win32'">$(ProjectName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='debug_static|x64'">$(ProjectName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='release_static|Win32'">$(ProjectName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='release_static|x64'">$(ProjectName)</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='debug_static|Win32'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='debug_static|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='release_static|Win32'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='release_static|x64'">.lib</TargetExt>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='debug_static|Win32'">false</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='debug_static|x64'">false</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='release_static|Win32'">false</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='release_static|x64'">false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>./include;./include/libxml;../pthread</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4131;4244;4127</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;WIN32;_WIN32;_LIB;_CRT_SECURE_NO_DEPRECATE;_WINDOWS;_DEBUG;HAVE_WIN32_THREADS;LIBXML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <StringPooling>true</StringPooling>
+      <AdditionalOptions>/Zc:threadSafeInit- %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN32;_WIN32;_VC11;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST;_DEBUG;_CRTDBG_MAP_ALLOC;LIBXML_STATIC_FOR_DLL;_TOOLKIT_IN_DLL_;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\TD\ThirdParty\LibXML\include;..\..\..\..\..\TD\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\TD\ThirdParty\LibXML\include;..\..\..\..\..\TD\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>./include;./include/libxml;../pthread</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4131;4244;4127</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;WIN32;_WIN32;_LIB;_CRT_SECURE_NO_DEPRECATE;_WINDOWS;_DEBUG;HAVE_WIN32_THREADS;LIBXML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN32;_WIN32;_VC11;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST;_DEBUG;_CRTDBG_MAP_ALLOC;LIBXML_STATIC_FOR_DLL;_TOOLKIT_IN_DLL_;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\TD\ThirdParty\LibXML\include;..\..\..\..\..\TD\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\TD\ThirdParty\LibXML\include;..\..\..\..\..\TD\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+    <Lib>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug_static|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>./include;./include/libxml;../pthread</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4131;4244;4127</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;WIN32;_WIN32;_LIB;_CRT_SECURE_NO_DEPRECATE;_WINDOWS;_DEBUG;HAVE_WIN32_THREADS;LIBXML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <StringPooling>true</StringPooling>
+      <AdditionalOptions>/Zc:threadSafeInit- %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN32;_WIN32;_VC11;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST;_DEBUG;_CRTDBG_MAP_ALLOC;LIBXML_STATIC_FOR_DLL;_TOOLKIT_IN_DLL_;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\TD\ThirdParty\LibXML\include;..\..\..\..\..\TD\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\TD\ThirdParty\LibXML\include;..\..\..\..\..\TD\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug_static|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>./include;./include/libxml;../pthread</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4131;4244;4127</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;WIN32;_WIN32;_LIB;_CRT_SECURE_NO_DEPRECATE;_WINDOWS;_DEBUG;HAVE_WIN32_THREADS;LIBXML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN32;_WIN32;_VC11;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST;_DEBUG;_CRTDBG_MAP_ALLOC;LIBXML_STATIC_FOR_DLL;_TOOLKIT_IN_DLL_;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\TD\ThirdParty\LibXML\include;..\..\..\..\..\TD\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\TD\ThirdParty\LibXML\include;..\..\..\..\..\TD\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+    <Lib>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>./include;./include/libxml</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <CompileAs>Default</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4131;4244;4127</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN32;_WIN32;_WINDOWS;NDEBUG;_CRTDBG_MAP_ALLOC;HAVE_WIN32_THREADS;LIBXML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <StringPooling>true</StringPooling>
+      <AdditionalOptions>/Zc:threadSafeInit- %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN32;_WIN32;_VC11;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST;_DEBUG;_CRTDBG_MAP_ALLOC;LIBXML_STATIC_FOR_DLL;_TOOLKIT_IN_DLL_;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\TD\ThirdParty\LibXML\include;..\..\..\..\..\TD\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\TD\ThirdParty\LibXML\include;..\..\..\..\..\TD\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <LinkTimeCodeGeneration>true</LinkTimeCodeGeneration>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>./include;./include/libxml</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <CompileAs>Default</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4131;4244;4127</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN32;_WIN32;_WINDOWS;NDEBUG;_CRTDBG_MAP_ALLOC;HAVE_WIN32_THREADS;LIBXML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN32;_WIN32;_VC11;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST;_DEBUG;_CRTDBG_MAP_ALLOC;LIBXML_STATIC_FOR_DLL;_TOOLKIT_IN_DLL_;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\TD\ThirdParty\LibXML\include;..\..\..\..\..\TD\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\TD\ThirdParty\LibXML\include;..\..\..\..\..\TD\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+    <Lib>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <LinkTimeCodeGeneration>true</LinkTimeCodeGeneration>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release_static|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>./include;./include/libxml</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <CompileAs>Default</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4131;4244;4127</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN32;_WIN32;_WINDOWS;NDEBUG;_CRTDBG_MAP_ALLOC;HAVE_WIN32_THREADS;LIBXML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <StringPooling>true</StringPooling>
+      <AdditionalOptions>/Zc:threadSafeInit- %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN32;_WIN32;_VC11;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST;_DEBUG;_CRTDBG_MAP_ALLOC;LIBXML_STATIC_FOR_DLL;_TOOLKIT_IN_DLL_;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\TD\ThirdParty\LibXML\include;..\..\..\..\..\TD\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\TD\ThirdParty\LibXML\include;..\..\..\..\..\TD\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <LinkTimeCodeGeneration>true</LinkTimeCodeGeneration>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release_static|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>./include;./include/libxml</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <CompileAs>Default</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4131;4244;4127</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN32;_WIN32;_WINDOWS;NDEBUG;_CRTDBG_MAP_ALLOC;HAVE_WIN32_THREADS;LIBXML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN32;_WIN32;_VC11;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST;_DEBUG;_CRTDBG_MAP_ALLOC;LIBXML_STATIC_FOR_DLL;_TOOLKIT_IN_DLL_;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\TD\ThirdParty\LibXML\include;..\..\..\..\..\TD\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\TD\ThirdParty\LibXML\include;..\..\..\..\..\TD\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+    <Lib>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <LinkTimeCodeGeneration>true</LinkTimeCodeGeneration>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\acconfig.h" />
+    <ClInclude Include="include\elfgcchack.h" />
+    <ClInclude Include="include\libxml.h" />
+    <ClInclude Include="include\libxml\c14n.h" />
+    <ClInclude Include="include\libxml\catalog.h" />
+    <ClInclude Include="include\libxml\chvalid.h" />
+    <ClInclude Include="include\libxml\debugXML.h" />
+    <ClInclude Include="include\libxml\dict.h" />
+    <ClInclude Include="include\libxml\DOCBparser.h" />
+    <ClInclude Include="include\libxml\encoding.h" />
+    <ClInclude Include="include\libxml\entities.h" />
+    <ClInclude Include="include\libxml\globals.h" />
+    <ClInclude Include="include\libxml\hash.h" />
+    <ClInclude Include="include\libxml\HTMLparser.h" />
+    <ClInclude Include="include\libxml\HTMLtree.h" />
+    <ClInclude Include="include\libxml\list.h" />
+    <ClInclude Include="include\libxml\nanoftp.h" />
+    <ClInclude Include="include\libxml\nanohttp.h" />
+    <ClInclude Include="include\libxml\parser.h" />
+    <ClInclude Include="include\libxml\parserInternals.h" />
+    <ClInclude Include="include\libxml\pattern.h" />
+    <ClInclude Include="include\libxml\relaxng.h" />
+    <ClInclude Include="include\libxml\SAX.h" />
+    <ClInclude Include="include\libxml\SAX2.h" />
+    <ClInclude Include="include\libxml\schemasInternals.h" />
+    <ClInclude Include="include\libxml\threads.h" />
+    <ClInclude Include="include\libxml\tree.h" />
+    <ClInclude Include="include\libxml\uri.h" />
+    <ClInclude Include="include\libxml\valid.h" />
+    <ClInclude Include="include\libxml\xinclude.h" />
+    <ClInclude Include="include\libxml\xlink.h" />
+    <ClInclude Include="include\libxml\xmlautomata.h" />
+    <ClInclude Include="include\libxml\xmlerror.h" />
+    <ClInclude Include="include\libxml\xmlexports.h" />
+    <ClInclude Include="include\libxml\xmlIO.h" />
+    <ClInclude Include="include\libxml\xmlmemory.h" />
+    <ClInclude Include="include\libxml\xmlmodule.h" />
+    <ClInclude Include="include\libxml\xmlreader.h" />
+    <ClInclude Include="include\libxml\xmlregexp.h" />
+    <ClInclude Include="include\libxml\xmlsave.h" />
+    <ClInclude Include="include\libxml\xmlschemas.h" />
+    <ClInclude Include="include\libxml\xmlschemastypes.h" />
+    <ClInclude Include="include\libxml\xmlstring.h" />
+    <ClInclude Include="include\libxml\xmlunicode.h" />
+    <ClInclude Include="include\libxml\xmlversion.h" />
+    <ClInclude Include="include\libxml\xmlwriter.h" />
+    <ClInclude Include="include\libxml\xpath.h" />
+    <ClInclude Include="include\libxml\xpathInternals.h" />
+    <ClInclude Include="include\libxml\xpointer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\c14n.c" />
+    <ClCompile Include="src\catalog.c" />
+    <ClCompile Include="src\chvalid.c" />
+    <ClCompile Include="src\debugXML.c" />
+    <ClCompile Include="src\dict.c" />
+    <ClCompile Include="src\DOCBparser.c" />
+    <ClCompile Include="src\encoding.c" />
+    <ClCompile Include="src\entities.c" />
+    <ClCompile Include="src\error.c" />
+    <ClCompile Include="src\globals.c" />
+    <ClCompile Include="src\hash.c" />
+    <ClCompile Include="src\HTMLparser.c" />
+    <ClCompile Include="src\HTMLtree.c" />
+    <ClCompile Include="src\legacy.c" />
+    <ClCompile Include="src\list.c" />
+    <ClCompile Include="src\parser.c" />
+    <ClCompile Include="src\parserInternals.c" />
+    <ClCompile Include="src\pattern.c" />
+    <ClCompile Include="src\relaxng.c" />
+    <ClCompile Include="src\SAX.c" />
+    <ClCompile Include="src\SAX2.c" />
+    <ClCompile Include="src\schematron.c" />
+    <ClCompile Include="src\threads.c" />
+    <ClCompile Include="src\tree.c" />
+    <ClCompile Include="src\uri.c" />
+    <ClCompile Include="src\valid.c" />
+    <ClCompile Include="src\wincecompat.c" />
+    <ClCompile Include="src\xinclude.c" />
+    <ClCompile Include="src\xlink.c" />
+    <ClCompile Include="src\xmlIO.c" />
+    <ClCompile Include="src\xmllint.c" />
+    <ClCompile Include="src\xmlmemory.c" />
+    <ClCompile Include="src\xmlmodule.c" />
+    <ClCompile Include="src\xmlreader.c" />
+    <ClCompile Include="src\xmlregexp.c" />
+    <ClCompile Include="src\xmlsave.c" />
+    <ClCompile Include="src\xmlstring.c" />
+    <ClCompile Include="src\xmlunicode.c" />
+    <ClCompile Include="src\xmlwriter.c" />
+    <ClCompile Include="src\xpath.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
